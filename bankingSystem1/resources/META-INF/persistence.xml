@@ -6,12 +6,13 @@
 
 	<persistence-unit name="jpaPersistenceUnit"
 		transaction-type="RESOURCE_LOCAL">
-		<class>za.co.bankingsystem.entities.Customer</class>
 		<class>za.co.bankingsystem.entities.Employee</class>
+			<class>za.co.bankingsystem.entities.User</class>	
+		<class>za.co.bankingsystem.entities.Customer</class>	
 		<class>za.co.bankingsystem.entities.Account</class>
 		<class>za.co.bankingsystem.entities.Card</class>
 		<class>za.co.bankingsystem.entities.Transaction</class>
-		<class>za.co.bankingsystem.entities.User</class>
+
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />

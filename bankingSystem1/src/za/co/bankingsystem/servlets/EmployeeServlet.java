@@ -30,8 +30,9 @@ public class EmployeeServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		System.out.println("Started saving....");
 		String jpaPersistenceName = "jpaPersistenceUnit";
-		EntityManagerFactory emf = null;
+		EntityManagerFactory emf =null;
 		EntityManager em = null;
+		
 		try {
 			emf = Persistence.createEntityManagerFactory(jpaPersistenceName);
 			em = emf.createEntityManager();

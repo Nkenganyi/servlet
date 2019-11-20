@@ -10,7 +10,7 @@
 	<div>
 		<h3>REGISTER EMPLOYEE</h3>
 		<button color="green">
-			<a href="pages/employee.jsp">register</a>
+			<a href="employee.jsp">register</a>
 		</button>
 	</div>
 
