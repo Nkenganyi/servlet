@@ -9,10 +9,11 @@
 <body>
 	<div>
 		<form method="POST" action="login.jsp">
-			<label>Enter Your email</label> <br /> <input type="text"
-				name="username" /> <br /> <label>Enter Password</label> <br /> <input
-				type="password" name="password" /> <br /> <input type="submit"
-				value="Login now!" /><br />
+			<label>Enter Your email</label> <br /> 
+			<input type="text" name="username" /> <br /> 
+			<label>Enter Password</label> <br /> 
+			<input> type="password" name="password" /> <br /> 
+			<input type="submit" value="Login now!" /><br />
 
 			<% String message = (String)request.getAttribute("message"); %>
 			<% if(message != null){

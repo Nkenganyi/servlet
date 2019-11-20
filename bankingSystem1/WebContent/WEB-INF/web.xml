@@ -8,7 +8,7 @@
   
    <servlet>
   	<servlet-name>LoginServlet</servlet-name>
-	<servlet-class>za.co.bankingSystem.servlets.LoginServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.servlets.LoginServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -18,7 +18,7 @@
   
    <servlet>
   	<servlet-name>EmployeeServlet</servlet-name>
-	<servlet-class>za.co.bankingSystem.servlets.EmployeeServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.servlets.EmployeeServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
