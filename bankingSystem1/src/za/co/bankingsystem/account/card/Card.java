@@ -1,4 +1,4 @@
-package za.co.bankingSystem.account.card;
+package za.co.bankingsystem.account.card;
 
 import java.util.Random;
 
@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import za.co.bankingSystem.account.Account;
+import za.co.bankingsystem.account.Account;
 @Entity
 @Table(name = "card")
 public class Card {

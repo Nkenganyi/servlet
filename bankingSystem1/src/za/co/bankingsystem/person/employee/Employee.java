@@ -1,4 +1,4 @@
-package za.co.bankingSystem.person.employee;
+package za.co.bankingsystem.person.employee;
 
 
 import javax.persistence.Column;
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import za.co.bankingSystem.person.user.User;
+import za.co.bankingsystem.person.user.User;
 @Entity
 @Table(name = "employees")
 public class Employee {

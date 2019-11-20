@@ -1,6 +1,7 @@
 package za.co.bankingSystem.person.customer;
 
 import java.time.LocalDate;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import za.co.bankingSystem.account.Account;
+import za.co.bankingsystem.account.Account;
 @Entity
 @Table(name = "customers")
 public class Customer {

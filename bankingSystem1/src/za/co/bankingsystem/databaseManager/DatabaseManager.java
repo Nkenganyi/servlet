@@ -1,4 +1,4 @@
-package za.co.bankingSystem.databaseManager;
+package za.co.bankingsystem.databaseManager;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

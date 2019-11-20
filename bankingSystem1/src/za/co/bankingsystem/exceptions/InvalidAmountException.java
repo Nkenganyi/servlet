@@ -1,4 +1,4 @@
-package za.co.bankingSystem.exceptions;
+package za.co.bankingsystem.exceptions;
 
 public class InvalidAmountException extends RuntimeException {
 	private static final String MESSAGE = "Invalid Amount";

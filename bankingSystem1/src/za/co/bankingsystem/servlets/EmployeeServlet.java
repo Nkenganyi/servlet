@@ -1,4 +1,4 @@
-package za.co.bankingSystem.servlets;
+package za.co.bankingsystem.servlets;
 
 import java.io.IOException;
 
@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import za.co.bankingSystem.person.employee.Employee;
-import za.co.bankingSystem.person.user.User;
 //import za.co.bankingSystem.registration.Registration;
+import za.co.bankingsystem.person.employee.Employee;
+import za.co.bankingsystem.person.user.User;
 
 @SuppressWarnings("serial")
 public class EmployeeServlet extends HttpServlet {

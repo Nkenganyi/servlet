@@ -1,4 +1,4 @@
-package za.co.bankingSystem.servlets;
+package za.co.bankingsystem.servlets;
 
 import java.io.IOException;
 

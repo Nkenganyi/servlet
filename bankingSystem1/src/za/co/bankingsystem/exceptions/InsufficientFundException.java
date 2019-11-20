@@ -1,4 +1,4 @@
-package za.co.bankingSystem.exceptions;
+package za.co.bankingsystem.exceptions;
 
 public class InsufficientFundException extends RuntimeException{
 	private static final String MESSAGE = "Your balance is lower than withdrawal amount";
