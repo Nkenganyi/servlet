@@ -14,9 +14,7 @@ import za.co.bankingSystem.account.Account;
 @Table(name = "card")
 public class Card {
 	
-	
-		
-		@Id
+	    @Id
 		@Column(name = "card_number")
 		private long cardNumber;
 		@Column(name = "pin")

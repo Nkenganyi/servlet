@@ -15,6 +15,7 @@ import za.co.bankingSystem.person.employee.Employee;
 import za.co.bankingSystem.person.user.User;
 //import za.co.bankingSystem.registration.Registration;
 
+@SuppressWarnings("serial")
 public class EmployeeServlet extends HttpServlet {
 
 	@Override

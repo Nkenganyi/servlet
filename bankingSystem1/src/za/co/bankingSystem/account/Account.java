@@ -1,20 +1,25 @@
 package za.co.bankingSystem.account;
 
 import java.time.LocalDateTime;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import za.co.bankingSystem.account.card.Card;
 import za.co.bankingSystem.account.transaction.Transaction;
 import za.co.bankingSystem.exceptions.InvalidAmountException;
 
+@Entity
+@Table(name ="accounts")
 public class Account {
 	
 	@Id
