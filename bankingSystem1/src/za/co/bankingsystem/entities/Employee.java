@@ -1,14 +1,15 @@
-package za.co.bankingsystem.person.employee;
+package za.co.bankingsystem.entities;
 
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import za.co.bankingsystem.person.user.User;
+import za.co.bankingsystem.entities.User;
 @Entity
 @Table(name = "employees")
 public class Employee {

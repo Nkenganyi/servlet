@@ -1,13 +1,12 @@
 package za.co.bankingsystem.registration;
 
-import java.time.LocalDate;
 
-import za.co.bankingSystem.person.customer.Customer;
-import za.co.bankingsystem.account.Account;
-import za.co.bankingsystem.account.card.Card;
+import za.co.bankingsystem.entities.Card;
+import za.co.bankingsystem.entities.Customer;
 import za.co.bankingsystem.databaseManager.DatabaseManager;
-import za.co.bankingsystem.person.employee.Employee;
-import za.co.bankingsystem.person.user.User;
+import za.co.bankingsystem.entities.Account;
+import za.co.bankingsystem.entities.Employee;
+import za.co.bankingsystem.entities.User;
 
 public class Registration {
 
