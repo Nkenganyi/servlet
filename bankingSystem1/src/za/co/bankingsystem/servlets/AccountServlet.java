@@ -1,6 +1,8 @@
 package za.co.bankingsystem.servlets;
 
 import java.io.IOException;
+import java.time.LocalDate;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -34,6 +36,7 @@ public class AccountServlet extends HttpServlet {
 		try {
 			emf = Persistence.createEntityManagerFactory(jpaPersistenceName);
 			em = emf.createEntityManager();
+			
 			em.getTransaction().begin();
 			Customer customer = new Customer();
 			Account account = new Account();
@@ -49,11 +52,12 @@ public class AccountServlet extends HttpServlet {
 			customer.setPhoneNumber(phone);
 			customer.setEmail(req.getParameter("emailAddress"));
 			customer.setAddress(req.getParameter("address"));
-			customer.setNationality("nationality");
+			customer.setNationality(req.getParameter("nationality"));
 			customer.setCity(req.getParameter("city"));
 			customer.setCountry(req.getParameter("country"));
 			account.setAccountType(req.getParameter("username"));
-			int pin = Integer.parseInt("pin");
+			String pp = req.getParameter("pin");
+			int pin = Integer.valueOf(pp);
 			card.setPin(pin);
 			card.setCardType(req.getParameter("cardType"));
 			
@@ -65,10 +69,10 @@ public class AccountServlet extends HttpServlet {
 			em.persist(card);
 
 			em.getTransaction().commit();
-			req.getRequestDispatcher("pages/employeeDashboard.jsp").forward(req, resp);
+			//req.getRequestDispatcher("pages/employeeDashboard.jsp").forward(req, resp);
 
 		} catch (Exception ex) {
-			System.out.println(ex);
+			ex.printStackTrace();
 			if(em!=null)
 			em.getTransaction().rollback();
 		}

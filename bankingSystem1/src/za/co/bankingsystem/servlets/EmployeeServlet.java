@@ -51,7 +51,7 @@ public class EmployeeServlet extends HttpServlet {
 			employee.setPhoneNumber(phone);
 			employee.setEmail(req.getParameter("emailAddress"));
 			employee.setAddress(req.getParameter("address"));
-			employee.setNationality("nationality");
+			employee.setNationality(req.getParameter("nationality"));
 			employee.setCity(req.getParameter("city"));
 			employee.setCountry(req.getParameter("country"));
 			employee.setPosition(req.getParameter("position"));
