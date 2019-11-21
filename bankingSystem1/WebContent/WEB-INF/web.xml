@@ -26,4 +26,14 @@
   	<url-pattern>/employee.jsp</url-pattern>
   </servlet-mapping>
   
+   <servlet>
+  	<servlet-name>AccountServlet</servlet-name>
+	<servlet-class>za.co.bankingsystem.servlets.AccountServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AccountServlet</servlet-name>
+  	<url-pattern>/account.jsp</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

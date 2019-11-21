@@ -64,7 +64,7 @@ public class EmployeeServlet extends HttpServlet {
 			em.persist(user);
 
 			em.getTransaction().commit();
-			req.getRequestDispatcher("index.jsp").forward(req, resp);
+			//req.getRequestDispatcher("index.jsp").forward(req, resp);
 
 		} catch (Exception ex) {
 			System.out.println(ex);

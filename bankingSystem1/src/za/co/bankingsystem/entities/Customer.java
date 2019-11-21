@@ -25,7 +25,7 @@ public class Customer {
 		@Column(name = "id_number")
 		private long idNumber;
 		@Column(name = "date_of_birth")
-		private LocalDate dateOfBirth;
+		private String dateOfBirth;
 		@Column(name = "phone_number")
 		private long phoneNumber;
 		@Column(name = "email_address")
@@ -46,7 +46,7 @@ public class Customer {
 			super();
 		}
 		
-		public Customer(String firstName, String lastName, long idNumber, LocalDate dateOfBirth, long phoneNumber,
+		public Customer(String firstName, String lastName, long idNumber, String dateOfBirth, long phoneNumber,
 				String email, String address, String nationality, String city, String country, List<Account> accounts) {
 			super();
 			this.firstName = firstName;
@@ -79,11 +79,11 @@ public class Customer {
 		public void setIdNumber(long idNumber) {
 			this.idNumber = idNumber;
 		}
-		public LocalDate getDateOfBirth() {
+		public String getDateOfBirth() {
 			return dateOfBirth;
 		}
-		public void setDateOfBirth(LocalDate dateOfBirth) {
-			this.dateOfBirth = dateOfBirth;
+		public void setDateOfBirth(String date) {
+			this.dateOfBirth = date;
 		}
 		public long getPhoneNumber() {
 			return phoneNumber;
