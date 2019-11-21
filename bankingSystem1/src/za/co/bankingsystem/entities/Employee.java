@@ -1,6 +1,7 @@
 package za.co.bankingsystem.entities;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 
 import javax.persistence.Entity;
@@ -37,7 +38,7 @@ public class Employee {
 		private String country;
 		@Column(name = "position")
 		private String position;
-		@OneToOne(fetch = FetchType.EAGER)
+		@OneToOne(cascade=CascadeType.ALL,fetch = FetchType.EAGER )
 		private User user;
 
 		

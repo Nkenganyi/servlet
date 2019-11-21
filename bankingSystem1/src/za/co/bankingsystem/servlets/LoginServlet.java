@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
 				req.setAttribute("message", "Invalid login credentials");
 				req.getRequestDispatcher("index.jsp").forward(req, resp);
 			}
-		} catch (ServletException | IOException | InterruptedException ex) {
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 		
@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		super.doGet(req, resp);
+		req.getRequestDispatcher("pages/managerDashboard.jsp").forward(req, resp);
 	}
 
 	@Override

@@ -26,16 +26,16 @@ public class User {
 		@Column(name = "password")
 		private String password;
 		
-		@OneToOne(cascade = CascadeType.ALL)
-		private Employee employee;
+		//@OneToOne(cascade = CascadeType.ALL)
+		//private Employee employee;
 		
-		public Employee getEmployee() {
+		/*public Employee getEmployee() {
 			return employee;
 		}
 
 		public void setEmployee(Employee employee) {
 			this.employee = employee;
-		}
+		}*/
 
 		public User() {
 			super();
@@ -74,7 +74,7 @@ public class User {
 		public int hashCode() {
 			final int prime = 31;
 			int result = 1;
-			result = prime * result + ((employee == null) ? 0 : employee.hashCode());
+			//result = prime * result + ((employee == null) ? 0 : employee.hashCode());
 			result = prime * result + ((password == null) ? 0 : password.hashCode());
 			result = prime * result + userId;
 			result = prime * result + ((username == null) ? 0 : username.hashCode());
@@ -90,11 +90,7 @@ public class User {
 			if (getClass() != obj.getClass())
 				return false;
 			User other = (User) obj;
-			if (employee == null) {
-				if (other.employee != null)
-					return false;
-			} else if (!employee.equals(other.employee))
-				return false;
+			
 			if (password == null) {
 				if (other.password != null)
 					return false;
@@ -113,7 +109,7 @@ public class User {
 		@Override
 		public String toString() {
 			return "User [userId=" + userId + ", username=" + username + ", password=" + password + ", employee="
-					+ employee + "]";
+					+  "]";
 		}
 		
 		

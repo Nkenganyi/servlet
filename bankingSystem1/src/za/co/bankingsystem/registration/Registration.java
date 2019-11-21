@@ -17,7 +17,7 @@ public class Registration {
 
 			DatabaseManager.getEntitymanager().getTransaction().begin();
 			employee.setUser(user);
-			user.setEmployee(employee);
+			//user.setEmployee(employee);
 			DatabaseManager.getEntitymanager().persist(employee);
 			DatabaseManager.getEntitymanager().persist(user);
 			DatabaseManager.getEntitymanager().getTransaction().commit();

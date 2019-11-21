@@ -22,7 +22,7 @@ public class EmployeeServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		super.doGet(req, resp);
+		req.getRequestDispatcher("pages/employee.jsp").forward(req, resp);
 	}
 	
 	@Override
@@ -59,12 +59,12 @@ public class EmployeeServlet extends HttpServlet {
 			user.setPassword(req.getParameter("password"));
 
 			employee.setUser(user);
-			user.setEmployee(employee);
-
+			
 			em.persist(employee);
 			em.persist(user);
 
 			em.getTransaction().commit();
+			req.getRequestDispatcher("index.jsp").forward(req, resp);
 
 		} catch (Exception ex) {
 			System.out.println(ex);
