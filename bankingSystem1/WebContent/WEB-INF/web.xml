@@ -8,7 +8,7 @@
   
    <servlet>
   	<servlet-name>LoginServlet</servlet-name>
-	<servlet-class>za.co.bankingsystem.servlets.LoginServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.controllers.LoginServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -18,7 +18,7 @@
   
    <servlet>
   	<servlet-name>EmployeeServlet</servlet-name>
-	<servlet-class>za.co.bankingsystem.servlets.EmployeeServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.controllers.EmployeeServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -28,7 +28,7 @@
   
    <servlet>
   	<servlet-name>AccountServlet</servlet-name>
-	<servlet-class>za.co.bankingsystem.servlets.AccountServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.controllers.AccountServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -38,7 +38,7 @@
   
   <servlet>
   	<servlet-name>DepositServlet</servlet-name>
-	<servlet-class>za.co.bankingsystem.servlets.DepositServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.controllers.DepositServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -48,7 +48,7 @@
   
    <servlet>
   	<servlet-name>WithdrawServlet</servlet-name>
-	<servlet-class>za.co.bankingsystem.servlets.WithdrawServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.controllers.WithdrawServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
@@ -58,7 +58,7 @@
   
    <servlet>
   	<servlet-name>TransactionServlet</servlet-name>
-	<servlet-class>za.co.bankingsystem.servlets.TransactionServlet</servlet-class>
+	<servlet-class>za.co.bankingsystem.controllers.TransactionServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
