@@ -11,7 +11,7 @@
 	<div style="background: #9400D3">
 	<h3 style="color: #FFFFFF">LOGIN</h3>
 	</div>
-		<form method="POST" action="login.jsp">
+		<form method="POST" action="loginA.jsp">
 			<label>Enter Your email</label> <br /> 
 			<input type="text" name="username" /> <br /> 
 			<label>Enter Password</label> <br /> 
