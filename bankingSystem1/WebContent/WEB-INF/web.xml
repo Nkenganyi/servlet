@@ -36,4 +36,34 @@
   	<url-pattern>/account.jsp</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>DepositServlet</servlet-name>
+	<servlet-class>za.co.bankingsystem.servlets.DepositServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DepositServlet</servlet-name>
+  	<url-pattern>/deposit.jsp</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>WithdrawServlet</servlet-name>
+	<servlet-class>za.co.bankingsystem.servlets.WithdrawServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>WithdrawServlet</servlet-name>
+  	<url-pattern>/withdraw.jsp</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>TransactionServlet</servlet-name>
+	<servlet-class>za.co.bankingsystem.servlets.TransactionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>TransactionServlet</servlet-name>
+  	<url-pattern>/tion.jsp</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -17,27 +17,27 @@
             <label>Last Name</label><br/>
             <input type="text" name="lastName" /><br/>
             <label>Id Number</label><br/>
-            <input type="number" name="idNumber" />
+            <input type="number" name="idNumber" /><br/>
             <label>Date Of Birth</label><br/>
             <input type="date" name="dateOfBirth" /><br/>
             <label>Phone Number</label><br/>
-            <input type="number" name="phoneNumber" />
+            <input type="number" name="phoneNumber" /><br/>
             <label>email Address</label><br/>
             <input type="email" name="emailAddress" /><br/>
             <label>Residential Address</label><br/>
-            <input type="text" name="address" />
+            <input type="text" name="address" /><br/>
             <label>Country of Origin</label><br/>
             <input type="text" name="nationality" /><br/>
             <label>City</label><br/>
-            <input type="text" name="city" />
+            <input type="text" name="city" /><br/>
             <label>Residential Country</label><br/>
             <input type="text" name="country" /><br/>
             <label>Account Type</label><br/>
-            <input type="text" name="accountType" />
+            <input type="text" name="accountType" /><br/>
             <label>Card Type</label><br/>
             <input type="text" name="cardType" /><br/>
             <label>Pin</label><br/>
-            <input type="tel" id="password" name="pin" onfocus="changeToPassword()"/><br/>
+            <input type="password"name="pin"/><br/>
             <input type="submit" value="save"/>
             <a href="pages/employeeDashboard.jsp" ><button> cancel </button></a>
                                 

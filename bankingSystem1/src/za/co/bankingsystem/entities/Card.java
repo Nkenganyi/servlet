@@ -17,7 +17,7 @@ import za.co.bankingsystem.entities.Account;
 public class Card {
 	
 	    @Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    
 		@Column(name = "card_number")
 		private long cardNumber;
 		@Column(name = "pin")

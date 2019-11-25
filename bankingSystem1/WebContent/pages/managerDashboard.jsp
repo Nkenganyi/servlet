@@ -7,15 +7,16 @@
 <title>employee registration</title>
 </head>
 <body>
-<div align="center" method="GET">
-	<div>
+<div align="center" >
+	<div >
 		<h3>REGISTER EMPLOYEE</h3>
+	</div>
 		<a href="employee.jsp">
 		<button>
 			register
 		</button>
 		</a>
-	</div>
+
 </div>
 </body>
 </html>

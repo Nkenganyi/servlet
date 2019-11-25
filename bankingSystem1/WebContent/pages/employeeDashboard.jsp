@@ -14,14 +14,15 @@
 		
 		<a href="account.jsp"><button>CREATE ACCOUNT</button></a>
 		<br>
-		<button>DEPOSIT</button>
-		<button>WITHDRAW</button><br>
+		<a href="deposit.jsp"><button>DEPOSIT</button></a>
+		<a href="withdraw.jsp"><button>WITHDRAW</button></a><br>
 		<button>CHECK BALANCE</button>
-		<button>PRINT STATEMENT</button><br>
+		<a href="tion.jsp"><button>PRINT STATEMENT</button></a><br>
 		<button>TRANSFER</button>
 		
 	
 	</div>
+	
 
 </body>
 </html>
