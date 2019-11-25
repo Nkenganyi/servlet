@@ -1,4 +1,4 @@
-package za.co.bankingsystem.servlets;
+package za.co.bankingsystem.controllers;
 
 import java.io.IOException;
 import java.util.List;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import za.co.bankingsystem.entities.Account;
+import za.co.bankingsystem.model.Account;
 
 
 public class TransactionServlet extends HttpServlet{

@@ -1,4 +1,4 @@
-package za.co.bankingsystem.entities;
+package za.co.bankingsystem.model;
 
 
 import javax.persistence.CascadeType;
@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import za.co.bankingsystem.entities.User;
+import za.co.bankingsystem.model.User;
 @Entity
 @Table(name = "employees")
 public class Employee {

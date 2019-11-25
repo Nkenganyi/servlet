@@ -1,6 +1,6 @@
 <%@page import="java.util.List"%>
-<%@page import="za.co.bankingsystem.entities.Account"%>
-<%@page import="za.co.bankingsystem.entities.Transaction"%>
+<%@page import="za.co.bankingsystem.model.Account"%>
+<%@page import="za.co.bankingsystem.model.Transaction"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

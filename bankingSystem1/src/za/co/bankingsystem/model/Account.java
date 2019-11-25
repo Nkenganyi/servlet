@@ -1,4 +1,4 @@
-package za.co.bankingsystem.entities;
+package za.co.bankingsystem.model;
 
 import java.time.LocalDateTime;
 
@@ -17,9 +17,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import za.co.bankingsystem.entities.Card;
-import za.co.bankingsystem.entities.Transaction;
 import za.co.bankingsystem.exceptions.InvalidAmountException;
+import za.co.bankingsystem.model.Card;
+import za.co.bankingsystem.model.Transaction;
 
 @Entity
 @Table(name ="accounts")

@@ -1,4 +1,4 @@
-package za.co.bankingsystem.entities;
+package za.co.bankingsystem.model;
 
 import java.time.LocalDate;
 

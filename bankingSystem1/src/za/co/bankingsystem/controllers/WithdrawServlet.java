@@ -1,4 +1,4 @@
-package za.co.bankingsystem.servlets;
+package za.co.bankingsystem.controllers;
 
 import java.io.IOException;
 
@@ -10,20 +10,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import za.co.bankingsystem.entities.Account;
-import za.co.bankingsystem.entities.Card;
-import za.co.bankingsystem.entities.Customer;
-//import za.co.jpa_bank.databaseManger.DatabaseManager;
+import za.co.bankingsystem.model.Account;
 
-@SuppressWarnings("unused")
-public class DepositServlet extends HttpServlet {
+public class WithdrawServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		req.getRequestDispatcher("pages/deposit.jsp").forward(req, resp);
+		req.getRequestDispatcher("pages/withdraw.jsp").forward(req, resp);
 	}
 
 	@Override
@@ -32,7 +28,7 @@ public class DepositServlet extends HttpServlet {
 		
 		
 		
-		System.out.println("Depositing....");
+		System.out.println("Withdrawing....");
 		String jpaPersistenceName = "jpaPersistenceUnit";
 		EntityManagerFactory emf =null;
 		EntityManager em = null;
@@ -48,7 +44,7 @@ public class DepositServlet extends HttpServlet {
 			
 			Account account = em.find(Account.class, accNo);
 			
-			account.makeDeposit(amount);
+			account.makeWithdrawal(amount);
 		
 			
 			
@@ -73,5 +69,6 @@ public class DepositServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		super.doDelete(req, resp);
 	}
+
 
 }

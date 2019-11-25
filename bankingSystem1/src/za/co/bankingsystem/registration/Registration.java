@@ -1,12 +1,12 @@
 package za.co.bankingsystem.registration;
 
 
-import za.co.bankingsystem.entities.Card;
-import za.co.bankingsystem.entities.Customer;
 import za.co.bankingsystem.databaseManager.DatabaseManager;
-import za.co.bankingsystem.entities.Account;
-import za.co.bankingsystem.entities.Employee;
-import za.co.bankingsystem.entities.User;
+import za.co.bankingsystem.model.Account;
+import za.co.bankingsystem.model.Card;
+import za.co.bankingsystem.model.Customer;
+import za.co.bankingsystem.model.Employee;
+import za.co.bankingsystem.model.User;
 
 public class Registration {
 
