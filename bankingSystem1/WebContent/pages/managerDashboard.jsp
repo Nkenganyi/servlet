@@ -8,12 +8,12 @@
 </head>
 <body>
 <div align="center" >
-	<div >
-		<h3>REGISTER EMPLOYEE</h3>
+	<div style="background: #9400D3">
+		<h3 style="background: #FFFFFF">REGISTER EMPLOYEE</h3>
 	</div>
 		<a href="employee.jsp">
-		<button>
-			register
+		<button style=" height: 50px; width : 100px ; color : #FFFFFF; background-color: #9400D3">
+		  <b>REGISTER</b>
 		</button>
 		</a>
 

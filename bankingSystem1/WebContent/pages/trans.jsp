@@ -11,8 +11,8 @@
 </head>
 <body>
 <div align="center">
-<div>
-<h3>TRANSACTIONS</h3>
+<div  style="background: #9400D3">
+<h3  style="color : #FFFFFF ">TRANSACTIONS</h3>
 </div>
 <table border="1">
 		<thead>
